@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, darkgreen, lightgreen);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white; /* Placeholder for profile picture */
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 36px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin: 0;
+}
