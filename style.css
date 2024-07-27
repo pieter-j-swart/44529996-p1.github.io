@@ -7,7 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #84c184;
 }
 
 header, main, aside {
@@ -21,16 +21,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #b6d3b6;
+    background-color: #84c184;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
-    transition-duration: 1200ms;
+    transition-duration: 500ms;
 }
 
 header:hover {
-    background-color: #84c184;
+    background-color: #b6d3b6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic {
@@ -67,16 +67,16 @@ h2 {
 }
 
 .overview {
-    background-color: #b6d3b6;
+    background-color: #84c184;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition-duration: 1200ms;
 }
 
 .overview:hover {
-    background-color: #84c184;
+    background-color: #b6d3b6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .overview-text {
@@ -88,6 +88,12 @@ h3 {
     padding: 0 20px;
 }
 
+.navigation {
+    background-color: #556a55;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 .menu {
     list-style: none;
     padding: 0;
@@ -95,7 +101,6 @@ h3 {
     justify-content: space-around;
     background-color: #556a55;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .menu li {
@@ -106,22 +111,136 @@ h3 {
     border-width: 2px;
     border-radius: 5px;
     border-color: #556a55;
-    transition-duration: 500ms;
-}
-
-@keyframes flash-border {
-    0%, 40%, 80% {
-        border-color: #b6d3b6;
-    }
-    20%, 60%, 100% {
-        border-color: #556a55;
-    }
+    transition-duration: 200ms;
 }
 
 .menu li:hover {
     cursor: pointer;
     border-color: #b6d3b6;
-    animation: flash-border 200ms ease-in-out 1;
+    background-color: #b6d3b6;
+    font-size: 1.1em;
+    color: #556a55;
+}
+
+.content {
+    display: block;
+    padding: 0 20px;
+    background-color: #b6d3b6;
+    border-radius: 0 0 10px 10px;
+}
+
+.content-item {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.content-item.active {
+    display: block;
+    padding: 20px;
+}
+
+#contact-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#contact-details p i {
+    margin-right: 20px;
+}
+
+.degree p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.degree p i {
+    margin-right: 20px;
+}
+
+.degree h3 {
+    padding: 0;
+    margin: 20px 0 10px 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-row, .contact-row, .degree-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.skill-icon, .contact-icon, .degree-icon {
+    margin-right: 20px;
+}
+
+.text-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.skill-text, .contact-text, .degree-text {
+    margin-bottom: 10px;
+}
+
+.degree {
+    margin-bottom: 20px;
+}
+
+.cert-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cert-item {
+    position: relative;
+    margin-bottom: 2em;
+    overflow: hidden;
+    transition: margin-bottom 0.3s ease;
+}
+
+.cert-description {
+    display: none; /* Hide by default */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    width: calc(100% - 1px);
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.cert-item:hover .cert-description {
+    display: block;
+}
+
+.cert-item.show-description .cert-description {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.cert-description {
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cert-item:hover + .cert-description {
+    transform: translateY(0);
+}
+
+.cert-item:hover {
+    text-decoration: underline;
+    margin-bottom: 4em;
 }
 
 .job {
