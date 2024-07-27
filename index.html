@@ -1,66 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Pieter Swart - Virtual CV</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Pieter Swart - Virtual CV</title>
+</head>
+<body>
+<!-- Profile Picture, Name and Role -->
+<header>
+    <img src="Pieter%20&%20Suzie%20Verlowing%20-%201-50.JPG" alt="Profile Picture" class="profile-pic">
+    <div class="header-text">
+        <h1>Pieter Swart</h1>
+        <h2>Salesforce Developer</h2>
+    </div>
+</header>
 
-    <body>
-        <!-- Profile Picture, Name and Role -->
-        <header>
-            <img src="Pieter%20&%20Suzie%20Verlowing%20-%201-50.JPG" alt="Profile Picture" class="profile-pic">
-            <div class="header-text">
-                <h1>Pieter Swart</h1>
-                <h2>Salesforce Developer</h2>
-            </div>
-        </header>
+<main>
+    <!-- About Me -->
+    <section class="overview">
+        <h3>About Me</h3>
+        <p class="overview-text">I am driven by an insatiable curiosity and a passion for innovation. My quest for knowledge and discovery constantly fuels my desire to explore and master new technologies. Harnessing the power of software, I am dedicated to crafting elegant and effective solutions. In a rapidly evolving technological landscape, I am committed to continuous learning and leveraging the latest tools and trends to deliver exceptional value to any organization.</p>
+    </section>
 
-        <main>
+    <!-- Navigation Bar -->
+    <section class="navigation">
+        <nav>
+            <ul class="menu">
+                <li data-content="contact-details">Contact Details</li>
+                <li data-content="skills">Skills</li>
+                <li data-content="education">Education</li>
+                <li data-content="certifications">Certifications</li>
+            </ul>
+        </nav>
 
-            <!-- About Me -->
-            <section class="overview">
-                <h3>About Me</h3>
-                <p class="overview-text">I am driven by an insatiable curiosity and a passion for innovation. My quest for knowledge and discovery constantly fuels my desire to explore and master new technologies. Harnessing the power of software, I am dedicated to crafting elegant and effective solutions. In a rapidly evolving technological landscape, I am committed to continuous learning and leveraging the latest tools and trends to deliver exceptional value to any organization.</p>
-            </section>
-
-            <!-- Navigation Bar -->
-            <nav>
-                <ul class="menu">
-                    <li>Contact Details</li>
-                    <li>Skills</li>
-                    <li>Education</li>
-                    <li>Certifications</li>
-                </ul>
-            </nav>
-
-            <section>
-                <!-- Dynamic content goes here -->
-            </section>
-        </main>
-
-        <aside>
-            <!-- Work Experience -->
-            <h3>Work Experience</h3>
-            <div class="experience">
-                <div class="job">
-                    <h4>Youth Pastor</h4>
-                    <p>(Jan 2019 - Dec 2021) <br> Lewende Woord Midrand, Centurion</p>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        <div class="content">
+            <div id="contact-details" class="content-item">
+                <div class="contact-row">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <p class="contact-text">Faerie Glen, Pretoria, 0181</p>
                 </div>
-                <div class="job">
-                    <h4>CrossFit Coach</h4>
-                    <p>(May 2021 - June 2022) <br> CrossFit Uhuru, Centurion</p>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <div class="contact-row">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <p class="contact-text">swartpieter07@gmail.com</p>
                 </div>
-                <div class="job">
-                    <h4>Salesforce Developer</h4>
-                    <p>(July 2022 - Present) <br> EXAH, Garsfontein</p>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <div class="contact-row">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <p class="contact-text">+27 82 667 9573</p>
                 </div>
             </div>
-        </aside>
-    </body>
+            <div id="skills" class="content-item">
+                <div class="skills-container">
+                    <div class="skill-row">
+                        <i class="fas fa-project-diagram skill-icon"></i>
+                        <p class="skill-text">Project Management</p>
+                    </div>
+                    <div class="skill-row">
+                        <i class="fas fa-business-time skill-icon"></i>
+                        <p class="skill-text">Business Process Mapping</p>
+                    </div>
+                    <div class="skill-row">
+                        <i class="fas fa-database skill-icon"></i>
+                        <p class="skill-text">Data Management</p>
+                    </div>
+                    <div class="skill-row">
+                        <i class="fas fa-code skill-icon"></i>
+                        <p class="skill-text">Programming</p>
+                    </div>
+                    <div class="skill-row">
+                        <i class="fas fa-microphone skill-icon"></i>
+                        <p class="skill-text">Public Speaking</p>
+                    </div>
+                    <div class="skill-row">
+                        <i class="fas fa-users skill-icon"></i>
+                        <p class="skill-text">Leadership</p>
+                    </div>
+                    <div class="skill-row">
+                        <i class="fas fa-coffee skill-icon"></i>
+                        <p class="skill-text">Barista</p>
+                    </div>
+                </div>
+            </div>
+            <div id="education" class="content-item">
+                <div class="degree">
+                    <h3>Bachelor of Theology</h3>
+                    <div class="degree-row">
+                        <i class="fas fa-map-marker-alt degree-icon"></i>
+                        <p class="degree-text">South African Theology Seminary</p>
+                    </div>
+                    <div class="degree-row">
+                        <i class="fas fa-calendar-alt degree-icon"></i>
+                        <p class="degree-text">Completed in 2021</p>
+                    </div>
+                </div>
+                <div class="degree">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <div class="degree-row">
+                        <i class="fas fa-map-marker-alt degree-icon"></i>
+                        <p class="degree-text">North-West University</p>
+                    </div>
+                    <div class="degree-row">
+                        <i class="fas fa-calendar-alt degree-icon"></i>
+                        <p class="degree-text">Final Year (2024)</p>
+                    </div>
+                </div>
+                </div>
+                <div id="certifications" class="content-item">
+                    <h3>Salesforce</h3>
+                    <ul class="cert-list">
+                        <li class="cert-item" data-cert="admin">Administrator
+                            <div class="cert-description">Description for Administrator</div>
+                        </li>
+                        <li class="cert-item" data-cert="adv-admin">Advanced Administrator
+                            <div class="cert-description">Description for Advanced Administrator</div>
+                        </li>
+                        <li class="cert-item" data-cert="app-arch">Application Architect
+                            <div class="cert-description">Description for Application Architect</div>
+                        </li>
+                        <li class="cert-item" data-cert="data-arch">Data Architect
+                            <div class="cert-description">Description for Data Architect</div>
+                        </li>
+                        <li class="cert-item" data-cert="data-cloud">Data Cloud Consultant
+                            <div class="cert-description">Description for Data Cloud Consultant</div>
+                        </li>
+                        <li class="cert-item" data-cert="js-dev">JavaScript Developer I
+                            <div class="cert-description">Description for Advanced JavaScript Developer I</div>
+                        </li>
+                        <li class="cert-item" data-cert="mc-email-spec">Marketing Cloud Email Specialist
+                            <div class="cert-description">Description for Marketing Cloud Email Specialist</div>
+                        </li>
+                        <li class="cert-item" data-cert="mulesoft-dev">Mulesoft Developer I
+                            <div class="cert-description">Description for Mulesoft Developer I
+                            </div>
+                        </li>
+                        <li class="cert-item" data-cert="app-builder">Platform App Builder
+                            <div class="cert-description">Description for Platform App Builder</div>
+                        </li>
+                        <li class="cert-item" data-cert="platform-dev">Platform Developer I
+                            <div class="cert-description">Description for Platform Developer I</div>
+                        </li>
+                        <li class="cert-item" data-cert="sales-cloud">Sales Cloud Consultant
+                            <div class="cert-description">Description for Sales Cloud Consultant</div>
+                        </li>
+                        <li class="cert-item" data-cert="service-cloud">Service Cloud Consultant
+                            <div class="cert-description">Description for Service Cloud Consultant</div>
+                        </li>
+                        <li class="cert-item" data-cert="sharing-vis-arch">Sharing and Visibility Architect
+                            <div class="cert-description">Description for Sharing and Visibility Architect</div>
+                        </li>
+                    </ul>
+                    <h3>CrossFit</h3>
+                    <ul class="cert-list">
+                        <li class="cert-item" data-cert="crossfit-lvl1">Level 1 CrossFit Trainer
+                            <p class="cert-description" id="crossfit-lvl1">Description for Level 1 CrossFit Trainer</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+</main>
+
+<aside>
+    <!-- Work Experience -->
+    <h3>Work Experience</h3>
+    <div class="experience">
+        <div class="job">
+            <h4>Youth Pastor</h4>
+            <p>(Jan 2019 - Dec 2021) <br> Lewende Woord Midrand, Centurion</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        </div>
+        <div class="job">
+            <h4>CrossFit Coach</h4>
+            <p>(May 2021 - June 2022) <br> CrossFit Uhuru, Centurion</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        </div>
+        <div class="job">
+            <h4>Salesforce Developer</h4>
+            <p>(July 2022 - Present) <br> EXAH, Garsfontein</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        </div>
+    </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
 </html>
