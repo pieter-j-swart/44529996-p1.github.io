@@ -10,33 +10,82 @@ body {
     background-color: #f4f4f4;
 }
 
+header, main, aside {
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b6d3b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
+    transition-duration: 1200ms;
+}
+
+header:hover {
+    background-color: #84c184;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 300px;
     border-radius: 10px;
-    border: 2px solid #333;
+    border: 2px solid #556a55;
+    margin-right: 20px;
+    flex: 0 0 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    flex: 0 0 66.67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, h2 {
     margin: 10px 0;
+    text-align: center;
 }
 
-main {
-    width: 80%;
-    max-width: 800px;
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 .overview {
-    background-color: #fff;
+    background-color: #b6d3b6;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 1200ms;
+}
+
+.overview:hover {
+    background-color: #84c184;
+}
+
+.overview-text {
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+h3 {
+    padding: 0 20px;
 }
 
 .menu {
@@ -44,25 +93,51 @@ main {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    background-color: #333;
+    background-color: #556a55;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .menu li {
-    margin: 10px 0;
+    margin: 20px;
+    color: white;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #556a55;
+    transition-duration: 500ms;
 }
 
+@keyframes flash-border {
+    0%, 40%, 80% {
+        border-color: #b6d3b6;
+    }
+    20%, 60%, 100% {
+        border-color: #556a55;
+    }
+}
 
+.menu li:hover {
+    cursor: pointer;
+    border-color: #b6d3b6;
+    animation: flash-border 200ms ease-in-out 1;
+}
 
-aside {
-    width: 80%;
-    max-width: 800px;
-    margin-top: 20px;
+.job {
+    background-color: #b6d3b6;
+    padding: 20px;
+    border-radius: 10px;
+    transition-duration: 300ms;
+}
+
+.job:hover {
+    background-color: #84c184;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .experience {
-    background-color: #fff;
+    background-color: #b6d3b6;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
